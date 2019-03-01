@@ -1,0 +1,21 @@
+{
+  "name": "codereview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/*.test.ts",
+    "output1": "nodemon --exec ts-node -- ./src/index.ts 'ShoppingBasket1.txt'",
+    "output2": "nodemon --exec ts-node -- ./src/index.ts 'ShoppingBasket2.txt'",
+    "output3": "nodemon --exec ts-node -- ./src/index.ts 'ShoppingBasket3.txt'",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.4",
+    "@types/mocha": "5.2.5",
+    "@types/node": "10.5.2",
+    "chai": "4.1.2",
+    "mocha": "5.2.0",
+    "ts-node": "7.0.0",
+    "typescript": "2.9.2"
+  }
+}
